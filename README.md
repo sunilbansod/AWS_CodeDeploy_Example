@@ -11,7 +11,7 @@ Please make sure that you add the following files to your project for this to wo
 <br />
 1. Create IAM Roles
 <br />
-CodeDeploy & EC2CodeDeploy
+CodeDeploy & CodeDeployEC2Service
 <br />
 2. Create EC2 instance with following categories
 <br />
@@ -22,7 +22,7 @@ CodeDeploy & EC2CodeDeploy
 &nbsp;&nbsp;&nbsp;&nbsp;    b. Choose Instance type: t2.micro
     <br />
     <br />
- &nbsp;&nbsp;&nbsp;&nbsp;   c. Configure Instance: Choose EC2CodeDeploy IAM role
+ &nbsp;&nbsp;&nbsp;&nbsp;   c. Configure Instance: Choose CodeDeployEC2Service IAM role
     <br />
     <br />
   &nbsp;&nbsp;&nbsp;&nbsp;  d. Tag Instance: Name it what you please
