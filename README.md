@@ -59,9 +59,9 @@ CodeDeploy & CodeDeployEC2Service
     <br />
     <br />
  
-  &nbsp;&nbsp;&nbsp;&nbsp;  d. Verify it is running.
+  &nbsp;&nbsp;&nbsp;&nbsp;  b. Restart service and Verify it is running .
     <br />
     <br />
-   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;     service codedeploy-agent status
+   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   service codedeploy-agent status and service codedeploy-agent status
 
    
