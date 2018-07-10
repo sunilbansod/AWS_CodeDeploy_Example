@@ -55,45 +55,10 @@ CodeDeploy & CodeDeployEC2Service
 4. Command line of Amazon Linux AMI 
 <br />
 <br />
-&nbsp;&nbsp;&nbsp;&nbsp;    a. When server is booted
+&nbsp;&nbsp;&nbsp;&nbsp;    a. Copy codedeploy_Initial.sh and Execute it
     <br />
     <br />
- &nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;    sudo su
-        <br />
-        <br />
- &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;     yum -y update
-        <br />
-        <br />
- &nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;    yum install -y aws-cli
-        <br />
-        <br />
- &nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;    cd /home/ec2-user
-        <br />
-        <br />
- &nbsp;&nbsp;&nbsp;&nbsp;   b. Here you will setup your AWS access, secret, and region.
-    <br />
-    <br />
-   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;     aws configure
-        <br />
-        <br />
-    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    aws s3 cp s3://aws-codedeploy-us-east-1/latest/install . --region us-east-1 (if in east AWS)
-        <br />
-        <br />
-    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; aws s3 cp s3://aws-codedeploy-us-west-2/latest/install . --region us-west-2 (if in west AWS)
-        <br />
-        <br />
-   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;     chmod +x ./install
-        <br />
-        <br />
-  &nbsp;&nbsp;&nbsp;&nbsp;  c. This is simply a quick hack to get the agent running faster.
-    <br />
-    <br />
-  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;      sed -i "s/sleep(.*)/sleep(10)/" install
-        <br />
-        <br />
-   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;     ./install auto
-        <br />
-        <br />
+ 
   &nbsp;&nbsp;&nbsp;&nbsp;  d. Verify it is running.
     <br />
     <br />
