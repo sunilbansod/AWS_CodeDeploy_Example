@@ -9,7 +9,7 @@ Please make sure that you add the following files to your project for this to wo
 <a href="https://www.youtube.com/watch?v=F6oLG-LyIhc&t=372s">Tutorial</a>
 <br />
 <br />
-1. Create IAM Roles
+1. Create IAM Roles. Reffer IAM.txt file for role policies. 
 <br />
 CodeDeploy & CodeDeployEC2Service
 <br />
